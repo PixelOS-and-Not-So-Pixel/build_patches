@@ -1,0 +1,26 @@
+From 482ebb57df61298ea4674298a8619a580272442a Mon Sep 17 00:00:00 2001
+From: Twel12 <shivansh.aeyron@gmail.com>
+Date: Tue, 22 Dec 2020 18:19:52 +0530
+Subject: [PATCH] Allow more options for Kernel to USE
+
+Signed-off-by: Twel12 <shivansh.aeyron@gmail.com>
+Change-Id: I9a9e3adf12265782e5579433e55ed60644b7809b
+---
+ ui/build/paths/config.go | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/ui/build/paths/config.go b/ui/build/paths/config.go
+index 6b08fa33..3e7ef7aa 100644
+--- a/ui/build/paths/config.go
++++ b/ui/build/paths/config.go
+@@ -78,6 +78,7 @@ var Configuration = map[string]PathConfig{
+ 	"bison":   Log,
+ 	"brotli":  Allowed,
+ 	"ccache":  Allowed,
++	"curl":    Allowed,
+ 	"date":    Allowed,
+ 	"dd":      Allowed,
+ 	"diff":    Allowed,
+-- 
+2.20.1
+

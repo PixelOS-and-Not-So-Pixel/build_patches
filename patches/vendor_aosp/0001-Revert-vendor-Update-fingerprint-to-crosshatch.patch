@@ -1,0 +1,24 @@
+From e0775226ac31f776290b2604f00291082ee236f4 Mon Sep 17 00:00:00 2001
+From: Twel12 <shivansh.aeyron@gmail.com>
+Date: Sat, 19 Dec 2020 19:16:42 +0530
+Subject: [PATCH] Revert "vendor: Update fingerprint to crosshatch"
+
+This reverts commit 6f0d71c7ea21a7ce7d9f1961e6797301fc3f6cce.
+---
+ config/BoardConfig.mk | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/config/BoardConfig.mk b/config/BoardConfig.mk
+index e5f527b7..5ad1b3b8 100644
+--- a/config/BoardConfig.mk
++++ b/config/BoardConfig.mk
+@@ -1,5 +1,5 @@
+ # Safetynet
+-TARGET_FORCE_BUILD_FINGERPRINT := google/crosshatch/crosshatch:11/RQ1A.201205.003/6906706:user/release-keys
++TARGET_FORCE_BUILD_FINGERPRINT := google/redfin/redfin:11/RQ1A.201205.010/6953398:user/release-keys
+ 
+ include vendor/aosp/config/BoardConfigKernel.mk
+ 
+-- 
+2.20.1
+
